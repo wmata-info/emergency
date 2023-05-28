@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000; }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --oldbackground-color: #1c2331;
+    --background-color: #1c1c1e;
+    --text-color: #ffffff; } }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif; }
+  body #countdown {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px; }
+  body form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    body form label {
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 8px; }
+    body form select {
+      width: 50vw;
+      height: 50px;
+      font-size: 14px;
+      border: 1px solid #cccccc;
+      border-radius: 6px;
+      background-color: var(--background-color);
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      font-family: "Poppins", sans-serif;
+      -webkit-text-align-last: center;
+      text-align-last: center;
+      text-align: center;
+      color: var(--text-color);
+      cursor: pointer; }
+    body form input[type="submit"] {
+      margin-top: 16px;
+      width: 200px;
+      height: 40px;
+      background-color: var(--text-color);
+      color: var(--background-color);
+      border-radius: 6px;
+      border: none;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: "Poppins", sans-serif; }
+
+@media only screen and (max-width: 1200px) {
+  select {
+    width: 80vw; } }
+#dropdown {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none; }
+  #dropdown::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent; }
+  #dropdown::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background-color: transparent; }
+  #dropdown::-webkit-scrollbar-track {
+    background-color: transparent; }
+  #dropdown::-webkit-scrollbar-corner {
+    background-color: transparent; }
+  #dropdown::-webkit-scrollbar {
+    display: none; }
+  #dropdown {
+    margin-right: -17px;
+    padding-right: 17px; }
